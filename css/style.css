@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    height: 15vh; 
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    grid-area: nav;
+    background-color:  white;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+}
+nav ul {
+    align-items: center;
+}
+nav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+nav ul li ol {
+    display: flex;
+    flex-direction: column;
+}
+.parrafo {
+    font-size: 12px;
+    color: rgb(216, 238, 16);
+    word-spacing: 8px;
+    line-height: normal;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.247);
+    padding: 10px 2px 10px 2px;
+}
+.tituloPrincipal1 {
+    color: whitesmoke;
+    letter-spacing: 15px;
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+}
+h2 {
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 25px 10px 25px 10px;
+}
+.fondoIndex {
+    background-image: url("../assets/sigmund-uS_MT4wUXf0-unsplash.jpg"); 
+        display: fex;      
+    }
+.fondoBio {
+    background-image: url("../assets/r-architecture-2gDwlIim3Uw-unsplash.jpg"); 
+        display: fex;      
+    }
+.fondoServicios {
+    background-image: url("../assets/jesse-orrico-P6IqUKhatuM-unsplash.jpg"); 
+        display: fex;      
+    }
+.fondoContacto {
+    background-image: url("../assets/hassan-sirah-dRHuZqUiABc-unsplash.jpg"); 
+        display: fex;      
+    }
+@media screen and (max-width: 768px){
+       .contenedor{
+        background-color: rgb(24, 196, 9);
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "card1 card2 card3 card4 card5"
+        "card6 card7 card8 card9 card10"
+    }  
+}
+@media screen and (max-width: 480px){
+        .contenedor{
+        background-color: rgb(70, 146, 247);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8"
+        "card9 card10";
+        }  
+    }
+.galeria {
+    display: flex;
+    background-color: rgb(255, 196, 1);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: last baseline;
+    }
+.card img{
+    width: 280px;
+    height: 250px;
+    opacity: .4;
+    border: 4px double rgba(109, 207, 175, 0.651);
+}
+.card img:hover{
+    opacity: 1;
+    border: solid #88ff00
+}
+form {
+    text-align: center;
+}
+footer {
+    background-color: orange;    
+}
+footer ul li {
+    text-align: left;
+}
