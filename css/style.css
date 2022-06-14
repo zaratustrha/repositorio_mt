@@ -9,6 +9,7 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 }
 nav {
     grid-area: nav;
@@ -30,9 +31,18 @@ nav ul li ol {
     display: flex;
     flex-direction: column;
 }
-.parrafo {
+.parrafoIndex {
     font-size: 12px;
     color: rgb(216, 238, 16);
+    word-spacing: 8px;
+    line-height: normal;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.247);
+    padding: 10px 2px 10px 2px;
+}
+.parrafoBio {
+    font-size: 12px;
+    color: rgb(8, 116, 92);
     word-spacing: 8px;
     line-height: normal;
     text-align: center;
@@ -46,7 +56,7 @@ nav ul li ol {
     padding: 25px 10px 25px 10px;
 }
 h2 {
-    color: whitesmoke;
+    color: rgb(8, 116, 92);
     font-weight: bold;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
@@ -56,54 +66,37 @@ h2 {
     padding: 25px 10px 25px 10px;
 }
 .fondoIndex {
-    background-image: url("../assets/sigmund-uS_MT4wUXf0-unsplash.jpg"); 
-        display: fex;      
+        background-image: url("../assets/sigmund-uS_MT4wUXf0-unsplash.jpg"); 
+        display: fex;  
+        height: 70vh;    
     }
 .fondoBio {
-    background-image: url("../assets/r-architecture-2gDwlIim3Uw-unsplash.jpg"); 
-        display: fex;      
+        background-image: url("https://images.unsplash.com/photo-1611072337226-1140ab367200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1388&q=80"); 
+        display: fex;    
+        height: 70vh;  
     }
 .fondoServicios {
-    background-image: url("../assets/jesse-orrico-P6IqUKhatuM-unsplash.jpg"); 
-        display: fex;      
+        background-image: url("https://media.istockphoto.com/photos/bridge-deck-underside-picture-id908474448?b=1&k=20&m=908474448&s=170667a&w=0&h=Xi8ROAPAZ9iNAylt4uepdZVJ2YemIwj-dJz7KvmHL34="); 
+        display: fex; 
+        height: 70vh;     
     }
 .fondoContacto {
-    background-image: url("../assets/hassan-sirah-dRHuZqUiABc-unsplash.jpg"); 
-        display: fex;      
-    }
-@media screen and (max-width: 768px){
-       .contenedor{
-        background-color: rgb(24, 196, 9);
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas: 
-        "card1 card2 card3 card4 card5"
-        "card6 card7 card8 card9 card10"
-    }  
-}
-@media screen and (max-width: 480px){
-        .contenedor{
-        background-color: rgb(70, 146, 247);
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: 
-        "card1 card2"
-        "card3 card4"
-        "card5 card6"
-        "card7 card8"
-        "card9 card10";
-        }  
+        background-image: url("https://media.istockphoto.com/photos/cracked-wall-picture-id482951137?k=20&m=482951137&s=612x612&w=0&h=uJsRre7xqWUoc1t6fDUCYRM4CKTL2rXIZnxw8DXMwCU="); 
+        display: fex;
+        height: 70vh;  
+        align-items: center;      
     }
 .galeria {
     display: flex;
-    background-color: rgb(255, 196, 1);
+    background-color: rgba(132, 247, 228, 0.205);
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: last baseline;
+    height: 75vh;
     }
 .card img{
-    width: 280px;
-    height: 250px;
+    max-width: 280px;
+    height: 220px;
     opacity: .4;
     border: 4px double rgba(109, 207, 175, 0.651);
 }
@@ -115,8 +108,14 @@ form {
     text-align: center;
 }
 footer {
-    background-color: orange;    
+    background-color: orange; 
+    align-items: center;
+    display: flex;   
 }
 footer ul li {
     text-align: left;
+}
+footer ul .mail {
+    text-align: right;
+    align-items: center;
 }
