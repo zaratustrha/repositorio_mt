@@ -171,3 +171,6 @@ footer ul .mail {
     flex-direction: column;
     align-items: center;
 }
+.logomt {
+    max-width: 60px;
+}
