@@ -68,7 +68,7 @@ h2 {
 .fondoParrafoIndex {
     background-color: rgba(169, 169, 169, 0.247);
     padding: 50px;
-    margin: 100px;
+    margin: 0 auto;
     justify-content: center;
 }
 .parrafoIndex {
