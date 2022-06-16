@@ -44,10 +44,13 @@
     grid-area: bloque1; 
 }
 .tituloPrincipal1 {
+    font-size: 25px;
     color: whitesmoke;
     letter-spacing: 15px;
     text-align: center;
     padding: 25px 10px 25px 10px;
+    margin-top: 50px;
+    justify-content: center;
 }
 h2 {
     color: rgb(8, 116, 92);
@@ -62,14 +65,19 @@ h2 {
 .bloque2 { 
     grid-area: bloque2; 
 }
+.fondoParrafoIndex {
+    background-color: rgba(169, 169, 169, 0.247);
+    padding: 50px;
+    margin: 100px;
+    justify-content: center;
+}
 .parrafoIndex {
-    font-size: 12px;
+    font-size: 16px;
     color: rgb(216, 238, 16);
     word-spacing: 8px;
     line-height: normal;
     text-align: center;
-    background-color: rgba(169, 169, 169, 0.247);
-    padding: 10px 2px 10px 2px;
+    padding: 10px;
 }
 .parrafoBio {
     font-size: 12px;
@@ -82,24 +90,27 @@ h2 {
 }
 .fondoIndex {
         background-image: url("../assets/sigmund-uS_MT4wUXf0-unsplash.jpg"); 
-        display: fex;  
-        height: 70vh;    
+        display: flex;  
+        height: 70vh; 
+        position: relative;
+        justify-content: center;
     }
 .fondoBio {
         background-image: url("https://images.unsplash.com/photo-1611072337226-1140ab367200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1388&q=80"); 
-        display: fex;    
+        display: flex;    
         height: 70vh;  
     }
 .fondoServicios {
         background-image: url("https://media.istockphoto.com/photos/bridge-deck-underside-picture-id908474448?b=1&k=20&m=908474448&s=170667a&w=0&h=Xi8ROAPAZ9iNAylt4uepdZVJ2YemIwj-dJz7KvmHL34="); 
-        display: fex; 
+        display: flex; 
         height: 70vh;     
     }
 .fondoContacto {
         background-image: url("https://media.istockphoto.com/photos/cracked-wall-picture-id482951137?k=20&m=482951137&s=612x612&w=0&h=uJsRre7xqWUoc1t6fDUCYRM4CKTL2rXIZnxw8DXMwCU="); 
-        display: fex;
+        display: flex;
         height: 70vh;  
-        align-items: center;      
+        align-items: center;    
+        justify-content: center;  
     }
 .galeria {
     display: flex;
