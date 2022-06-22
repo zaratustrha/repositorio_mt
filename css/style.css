@@ -4,16 +4,7 @@
     border: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.container {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "navegador navegador navegador navegador navegador"
-      "bloque1 bloque1 bloque1 bloque1 bloque1"
-      "bloque2 bloque2 bloque2 bloque2 bloque2"
-      "footer footer footer footer footer";
-}
+
 .navegador {
     grid-area: Navegador;
     height: 15vh; 
@@ -40,8 +31,15 @@
     display: flex;
     flex-direction: column;
 }
-.bloque1 { 
-    grid-area: bloque1; 
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "navegador navegador navegador navegador navegador"
+      "bloque1 bloque1 bloque1 bloque1 bloque1"
+      "bloque2 bloque2 bloque2 bloque2 bloque2"
+      "footer footer footer footer footer";
 }
 .tituloPrincipal1 {
     font-size: 25px;
@@ -61,9 +59,6 @@ h2 {
     letter-spacing: 5px;
     text-align: center;
     padding: 25px 10px 25px 10px;
-}
-.bloque2 { 
-    grid-area: bloque2; 
 }
 .fondoParrafoIndex {
     background-color: rgba(169, 169, 169, 0.247);
@@ -89,12 +84,12 @@ h2 {
     padding: 10px 2px 10px 2px;
 }
 .fondoIndex {
-        background-image: url("../assets/sigmund-uS_MT4wUXf0-unsplash.jpg"); 
-        display: flex;  
-        height: 70vh; 
-        position: relative;
-        justify-content: center;
-    }
+    background-image: url("../assets/sigmund-uS_MT4wUXf0-unsplash.jpg"); 
+    display: flex;  
+    height: 70vh; 
+    position: relative;
+    justify-content: center;
+}
 .fondoBio {
         background-image: url("https://images.unsplash.com/photo-1611072337226-1140ab367200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1388&q=80"); 
         display: flex;    
@@ -115,7 +110,6 @@ h2 {
 .galeria {
     display: flex;
     background-color: rgba(132, 247, 228, 0.205);
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: last baseline;
     height: 75vh;
